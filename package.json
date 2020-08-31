@@ -1,0 +1,22 @@
+{
+	"name": "tailwindcss-leading-trim",
+	"version": "0.0.0",
+	"description": "leading trim utility classes and polyfill for tailwindcss",
+	"repository": "https://github.com/MathGeniusJodie/tailwindcss-leading-trim",
+	"main": "index.js",
+	"scripts": {
+		"build": "node build.js ; npx prettier --use-tabs --write ./*.js"
+	},
+	"contributors": [
+		"Jodie <https://github.com/MathGeniusJodie>"
+	],
+	"license": "WTFPL",
+	"devDependencies": {
+		"tailwindcss": "^1.7.6",
+		"tailwindcss-rtl": "^0.4.0"
+	},
+	"dependencies": {
+		"capsize": "^1.1.0",
+		"lodash": "^4.17.20"
+	}
+}

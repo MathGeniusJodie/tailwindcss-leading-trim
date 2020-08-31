@@ -1,0 +1,400 @@
+.trim-start {
+  margin-top: calc( var(--leading-offset) + var(--font-offset-start) )
+}
+
+.trim-end {
+  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end) )
+}
+
+.trim-both {
+  margin-top: calc( var(--leading-offset) + var(--font-offset-start) );
+  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end) )
+}
+
+.font-source-sans {
+  font-family: Source Sans Pro;
+  --font-offset-start: -0.1955em;
+  --font-offset-end: -0.1445em
+}
+
+.leading-3 {
+  line-height: .75rem;
+  --leading-offset: calc( (.75rem - 1em) / -2)
+}
+
+.leading-4 {
+  line-height: 1rem;
+  --leading-offset: calc( (1rem - 1em) / -2)
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+  --leading-offset: calc( (1.25rem - 1em) / -2)
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+  --leading-offset: calc( (1.5rem - 1em) / -2)
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+  --leading-offset: calc( (1.75rem - 1em) / -2)
+}
+
+.leading-8 {
+  line-height: 2rem;
+  --leading-offset: calc( (2rem - 1em) / -2)
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+  --leading-offset: calc( (2.25rem - 1em) / -2)
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+  --leading-offset: calc( (2.5rem - 1em) / -2)
+}
+
+.leading-none {
+  line-height: 1;
+  --leading-offset: 0em
+}
+
+.leading-tight {
+  line-height: 1.25;
+  --leading-offset: -0.125em
+}
+
+.leading-snug {
+  line-height: 1.375;
+  --leading-offset: -0.1875em
+}
+
+.leading-normal {
+  line-height: 1.5;
+  --leading-offset: -0.25em
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+  --leading-offset: -0.3125em
+}
+
+.leading-loose {
+  line-height: 2;
+  --leading-offset: -0.5em
+}
+
+@media (min-width: 640px) {
+  .sm\:font-source-sans {
+    font-family: Source Sans Pro;
+    --font-offset-start: -0.1955em;
+    --font-offset-end: -0.1445em
+  }
+
+  .sm\:leading-3 {
+    line-height: .75rem;
+    --leading-offset: calc( (.75rem - 1em) / -2)
+  }
+
+  .sm\:leading-4 {
+    line-height: 1rem;
+    --leading-offset: calc( (1rem - 1em) / -2)
+  }
+
+  .sm\:leading-5 {
+    line-height: 1.25rem;
+    --leading-offset: calc( (1.25rem - 1em) / -2)
+  }
+
+  .sm\:leading-6 {
+    line-height: 1.5rem;
+    --leading-offset: calc( (1.5rem - 1em) / -2)
+  }
+
+  .sm\:leading-7 {
+    line-height: 1.75rem;
+    --leading-offset: calc( (1.75rem - 1em) / -2)
+  }
+
+  .sm\:leading-8 {
+    line-height: 2rem;
+    --leading-offset: calc( (2rem - 1em) / -2)
+  }
+
+  .sm\:leading-9 {
+    line-height: 2.25rem;
+    --leading-offset: calc( (2.25rem - 1em) / -2)
+  }
+
+  .sm\:leading-10 {
+    line-height: 2.5rem;
+    --leading-offset: calc( (2.5rem - 1em) / -2)
+  }
+
+  .sm\:leading-none {
+    line-height: 1;
+    --leading-offset: 0em
+  }
+
+  .sm\:leading-tight {
+    line-height: 1.25;
+    --leading-offset: -0.125em
+  }
+
+  .sm\:leading-snug {
+    line-height: 1.375;
+    --leading-offset: -0.1875em
+  }
+
+  .sm\:leading-normal {
+    line-height: 1.5;
+    --leading-offset: -0.25em
+  }
+
+  .sm\:leading-relaxed {
+    line-height: 1.625;
+    --leading-offset: -0.3125em
+  }
+
+  .sm\:leading-loose {
+    line-height: 2;
+    --leading-offset: -0.5em
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:font-source-sans {
+    font-family: Source Sans Pro;
+    --font-offset-start: -0.1955em;
+    --font-offset-end: -0.1445em
+  }
+
+  .md\:leading-3 {
+    line-height: .75rem;
+    --leading-offset: calc( (.75rem - 1em) / -2)
+  }
+
+  .md\:leading-4 {
+    line-height: 1rem;
+    --leading-offset: calc( (1rem - 1em) / -2)
+  }
+
+  .md\:leading-5 {
+    line-height: 1.25rem;
+    --leading-offset: calc( (1.25rem - 1em) / -2)
+  }
+
+  .md\:leading-6 {
+    line-height: 1.5rem;
+    --leading-offset: calc( (1.5rem - 1em) / -2)
+  }
+
+  .md\:leading-7 {
+    line-height: 1.75rem;
+    --leading-offset: calc( (1.75rem - 1em) / -2)
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
+    --leading-offset: calc( (2rem - 1em) / -2)
+  }
+
+  .md\:leading-9 {
+    line-height: 2.25rem;
+    --leading-offset: calc( (2.25rem - 1em) / -2)
+  }
+
+  .md\:leading-10 {
+    line-height: 2.5rem;
+    --leading-offset: calc( (2.5rem - 1em) / -2)
+  }
+
+  .md\:leading-none {
+    line-height: 1;
+    --leading-offset: 0em
+  }
+
+  .md\:leading-tight {
+    line-height: 1.25;
+    --leading-offset: -0.125em
+  }
+
+  .md\:leading-snug {
+    line-height: 1.375;
+    --leading-offset: -0.1875em
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
+    --leading-offset: -0.25em
+  }
+
+  .md\:leading-relaxed {
+    line-height: 1.625;
+    --leading-offset: -0.3125em
+  }
+
+  .md\:leading-loose {
+    line-height: 2;
+    --leading-offset: -0.5em
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:font-source-sans {
+    font-family: Source Sans Pro;
+    --font-offset-start: -0.1955em;
+    --font-offset-end: -0.1445em
+  }
+
+  .lg\:leading-3 {
+    line-height: .75rem;
+    --leading-offset: calc( (.75rem - 1em) / -2)
+  }
+
+  .lg\:leading-4 {
+    line-height: 1rem;
+    --leading-offset: calc( (1rem - 1em) / -2)
+  }
+
+  .lg\:leading-5 {
+    line-height: 1.25rem;
+    --leading-offset: calc( (1.25rem - 1em) / -2)
+  }
+
+  .lg\:leading-6 {
+    line-height: 1.5rem;
+    --leading-offset: calc( (1.5rem - 1em) / -2)
+  }
+
+  .lg\:leading-7 {
+    line-height: 1.75rem;
+    --leading-offset: calc( (1.75rem - 1em) / -2)
+  }
+
+  .lg\:leading-8 {
+    line-height: 2rem;
+    --leading-offset: calc( (2rem - 1em) / -2)
+  }
+
+  .lg\:leading-9 {
+    line-height: 2.25rem;
+    --leading-offset: calc( (2.25rem - 1em) / -2)
+  }
+
+  .lg\:leading-10 {
+    line-height: 2.5rem;
+    --leading-offset: calc( (2.5rem - 1em) / -2)
+  }
+
+  .lg\:leading-none {
+    line-height: 1;
+    --leading-offset: 0em
+  }
+
+  .lg\:leading-tight {
+    line-height: 1.25;
+    --leading-offset: -0.125em
+  }
+
+  .lg\:leading-snug {
+    line-height: 1.375;
+    --leading-offset: -0.1875em
+  }
+
+  .lg\:leading-normal {
+    line-height: 1.5;
+    --leading-offset: -0.25em
+  }
+
+  .lg\:leading-relaxed {
+    line-height: 1.625;
+    --leading-offset: -0.3125em
+  }
+
+  .lg\:leading-loose {
+    line-height: 2;
+    --leading-offset: -0.5em
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:font-source-sans {
+    font-family: Source Sans Pro;
+    --font-offset-start: -0.1955em;
+    --font-offset-end: -0.1445em
+  }
+
+  .xl\:leading-3 {
+    line-height: .75rem;
+    --leading-offset: calc( (.75rem - 1em) / -2)
+  }
+
+  .xl\:leading-4 {
+    line-height: 1rem;
+    --leading-offset: calc( (1rem - 1em) / -2)
+  }
+
+  .xl\:leading-5 {
+    line-height: 1.25rem;
+    --leading-offset: calc( (1.25rem - 1em) / -2)
+  }
+
+  .xl\:leading-6 {
+    line-height: 1.5rem;
+    --leading-offset: calc( (1.5rem - 1em) / -2)
+  }
+
+  .xl\:leading-7 {
+    line-height: 1.75rem;
+    --leading-offset: calc( (1.75rem - 1em) / -2)
+  }
+
+  .xl\:leading-8 {
+    line-height: 2rem;
+    --leading-offset: calc( (2rem - 1em) / -2)
+  }
+
+  .xl\:leading-9 {
+    line-height: 2.25rem;
+    --leading-offset: calc( (2.25rem - 1em) / -2)
+  }
+
+  .xl\:leading-10 {
+    line-height: 2.5rem;
+    --leading-offset: calc( (2.5rem - 1em) / -2)
+  }
+
+  .xl\:leading-none {
+    line-height: 1;
+    --leading-offset: 0em
+  }
+
+  .xl\:leading-tight {
+    line-height: 1.25;
+    --leading-offset: -0.125em
+  }
+
+  .xl\:leading-snug {
+    line-height: 1.375;
+    --leading-offset: -0.1875em
+  }
+
+  .xl\:leading-normal {
+    line-height: 1.5;
+    --leading-offset: -0.25em
+  }
+
+  .xl\:leading-relaxed {
+    line-height: 1.625;
+    --leading-offset: -0.3125em
+  }
+
+  .xl\:leading-loose {
+    line-height: 2;
+    --leading-offset: -0.5em
+  }
+}
