@@ -30,7 +30,7 @@ module.exports = plugin(
 				const fontFamily = Array.isArray(value) ? value.join(", ") : value;
 
 				const fontMetrics =
-					theme("fontMetrics." + preferedFont, {}) ||
+					theme("fontMetrics." + preferedFont) ||
 					find(fontMetricsList, {
 						familyName: preferedFont,
 					});
@@ -44,8 +44,6 @@ module.exports = plugin(
 						},
 					];
 				}
-
-				console.log(fontMetrics);
 
 				const { ascent, descent, unitsPerEm, capHeight } = fontMetrics;
 
