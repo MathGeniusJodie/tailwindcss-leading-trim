@@ -1,14 +1,14 @@
 .trim-start {
-  margin-top: calc( var(--leading-offset) + var(--font-offset-start) )
+  margin-top: calc( var(--leading-offset) + var(--font-offset-start,0) )
 }
 
 .trim-end {
-  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end) )
+  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end,0) )
 }
 
 .trim-both {
-  margin-top: calc( var(--leading-offset) + var(--font-offset-start) );
-  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end) )
+  margin-top: calc( var(--leading-offset) + var(--font-offset-start,0) );
+  margin-bottom: calc( var(--leading-offset) + var(--font-offset-end,0) )
 }
 
 .font-source-sans {

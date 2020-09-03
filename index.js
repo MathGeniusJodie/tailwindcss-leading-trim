@@ -5,75 +5,92 @@ const stripUnit = (string) => string.match(/[\d.]+/)[0];
 
 const fontMetricsList = require("./metrics.json");
 
-module.exports = plugin(({ addUtilities, e, theme, variants }) => {
-	addUtilities({
-		".trim-start": {
-			"margin-top": "calc( var(--leading-offset) + var(--font-offset-start) )",
-		},
-		".trim-end": {
-			"margin-bottom": "calc( var(--leading-offset) + var(--font-offset-end) )",
-		},
-		".trim-both": {
-			"margin-top": "calc( var(--leading-offset) + var(--font-offset-start) )",
-			"margin-bottom": "calc( var(--leading-offset) + var(--font-offset-end) )",
-		},
-	});
+module.exports = plugin(
+	({ addUtilities, e, theme, variants }) => {
+		addUtilities({
+			".trim-start": {
+				"margin-top":
+					"calc( var(--leading-offset) + var(--font-offset-start,0) )",
+			},
+			".trim-end": {
+				"margin-bottom":
+					"calc( var(--leading-offset) + var(--font-offset-end,0) )",
+			},
+			".trim-both": {
+				"margin-top":
+					"calc( var(--leading-offset) + var(--font-offset-start,0) )",
+				"margin-bottom":
+					"calc( var(--leading-offset) + var(--font-offset-end,0) )",
+			},
+		});
 
-	const fontFamilyUtilities = fromPairs(
-		map(theme("fontFamily"), (value, modifier) => {
-			const preferedFont = Array.isArray(value) ? value[0] : value;
-			const fontFamily = Array.isArray(value) ? value.join(", ") : value;
+		const fontFamilyUtilities = fromPairs(
+			map(theme("fontFamily"), (value, modifier) => {
+				const preferedFont = Array.isArray(value) ? value[0] : value;
+				const fontFamily = Array.isArray(value) ? value.join(", ") : value;
 
-			const fontMetrics = find(fontMetricsList, {
-				familyName: preferedFont,
-			});
-			if (!fontMetrics) {
-				console.log("can't find font metrics for font: " + preferedFont);
+				const fontMetrics =
+					theme("fontMetrics." + preferedFont, {}) ||
+					find(fontMetricsList, {
+						familyName: preferedFont,
+					});
+
+				if (!fontMetrics) {
+					console.log("can't find font metrics for font: " + preferedFont);
+					return [
+						`.${e(`font-${modifier}`)}`,
+						{
+							"font-family": fontFamily,
+						},
+					];
+				}
+
+				console.log(fontMetrics);
+
+				const { ascent, descent, unitsPerEm, capHeight } = fontMetrics;
+
+				const foo = (ascent - descent - unitsPerEm) / 2;
+
+				const offsetStart = (ascent - capHeight - foo) / -unitsPerEm + "em";
+				const offsetEnd = (foo + descent) / unitsPerEm + "em";
+
 				return [
 					`.${e(`font-${modifier}`)}`,
 					{
 						"font-family": fontFamily,
+						"--font-offset-start": offsetStart,
+						"--font-offset-end": offsetEnd,
 					},
 				];
-			}
+			})
+		);
 
-			const { ascent, descent, unitsPerEm, capHeight } = fontMetrics;
+		addUtilities(fontFamilyUtilities, variants("fontFamily"));
 
-			const foo = (ascent - descent - unitsPerEm) / 2;
+		const lineHeightUtilities = fromPairs(
+			map(theme("lineHeight"), (value, modifier) => {
+				const valueStripped = stripUnit(value);
 
-			const offsetStart = (ascent - capHeight - foo) / -unitsPerEm + "em";
-			const offsetEnd = (foo + descent) / unitsPerEm + "em";
+				const offset =
+					valueStripped === value
+						? (Number(value) - 1) / -2 + "em"
+						: `calc( (${value} - 1em) / -2)`;
+				return [
+					`.${e(`leading-${modifier}`)}`,
+					{
+						"line-height": value,
+						"--leading-offset": offset,
+					},
+				];
+			})
+		);
 
-			return [
-				`.${e(`font-${modifier}`)}`,
-				{
-					"font-family": fontFamily,
-					"--font-offset-start": offsetStart,
-					"--font-offset-end": offsetEnd,
-				},
-			];
-		})
-	);
-
-	addUtilities(fontFamilyUtilities, variants("fontFamily"));
-
-	const lineHeightUtilities = fromPairs(
-		map(theme("lineHeight"), (value, modifier) => {
-			const valueStripped = stripUnit(value);
-
-			const offset =
-				valueStripped === value
-					? (Number(value) - 1) / -2 + "em"
-					: `calc( (${value} - 1em) / -2)`;
-			return [
-				`.${e(`leading-${modifier}`)}`,
-				{
-					"line-height": value,
-					"--leading-offset": offset,
-				},
-			];
-		})
-	);
-
-	addUtilities(lineHeightUtilities, variants("lineHeight"));
-}, {});
+		addUtilities(lineHeightUtilities, variants("lineHeight"));
+	},
+	{
+		corePlugins: {
+			fontFamily: false,
+			lineHeight: false,
+		},
+	}
+);
