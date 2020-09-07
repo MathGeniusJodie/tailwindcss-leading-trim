@@ -6,6 +6,7 @@ leading trim utility classes and polyfill for tailwindcss
 
 ## what is leading-trim?
 
+<https://www.w3.org/TR/css-inline-3/#leading-trim>
 <https://medium.com/microsoft-design/leading-trim-the-future-of-digital-typesetting-d082d84b202>
 
 ## config
@@ -76,5 +77,6 @@ and the trim classes apply a negative margin to the element based on the font fa
 - more verbose option that uses pseudo-elements so as not to mess with the margin of elements
 - optional default values for when a leading and font family aren't explicitly set using utility classes
 - more docs and tooling
+- options for `text-edge` (edge-ex, edge-cap, others?)
 
 issues and pull requests are welcome and encouraged!
