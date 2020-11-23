@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-leading-trim",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "leading trim utility classes and polyfill for tailwindcss",
 	"repository": "https://github.com/MathGeniusJodie/tailwindcss-leading-trim",
 	"main": "index.js",
