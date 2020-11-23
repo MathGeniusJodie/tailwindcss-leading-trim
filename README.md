@@ -40,7 +40,7 @@ easy web-based tool to extract font metrics from any font: https://seek-oss.gith
 
 this plugin adds 3 utility classes: `.trim-start`, `.trim-end` and `.trim-both`
 
-**font size and leading must be explicitly set on the element or a parent element with a tailwind class**
+**font-family must be explicitly set on the element or a parent element with a tailwind class**
 
 ## how the polyfill is implemented
 
@@ -75,7 +75,6 @@ and the trim classes apply a negative margin to the element based on the font fa
 ## future features?
 
 - more verbose option that uses pseudo-elements so as not to mess with the margin of elements
-- optional default values for when a leading and font family aren't explicitly set using utility classes
 - more docs and tooling
 - options for `text-edge` (edge-ex, edge-cap, others?)
 
