@@ -1,7 +1,41 @@
 const plugin = require("tailwindcss/plugin");
-const { map, fromPairs, find } = require("lodash");
+const { map, fromPairs, find, isPlainObject, get } = require("lodash");
+
+const parser = require("postcss-selector-parser");
+
+const escapeClassName = (className) => {
+	const node = parser.className();
+	node.value = className;
+	return get(node, "raws.value", node.value);
+};
 
 const stripUnit = (string) => string.match(/[\d.]+/)[0];
+
+const asClass = (name) => `.${escapeClassName(name)}`;
+
+const nameClass = (classPrefix, key) => {
+	if (key === "DEFAULT") {
+		return asClass(classPrefix);
+	}
+
+	if (key === "-") {
+		return asClass(`-${classPrefix}`);
+	}
+
+	if (key.startsWith("-")) {
+		return asClass(`-${classPrefix}${key}`);
+	}
+
+	return asClass(`${classPrefix}-${key}`);
+};
+
+const offsetFromLineHeight = (value) => {
+	const valueStripped = stripUnit(value);
+
+	return valueStripped === value
+		? (Number(value) - 1) / -2 + "em"
+		: `calc( (${value} - 1em) / -2)`;
+};
 
 const fontMetricsList = require("./metrics.json");
 
@@ -10,17 +44,17 @@ module.exports = plugin(
 		addUtilities({
 			".trim-start": {
 				"margin-top":
-					"calc( var(--leading-offset) + var(--font-offset-start,0) )",
+					"calc( var(--leading-offset,-.25em) + var(--font-offset-start,0em) )",
 			},
 			".trim-end": {
 				"margin-bottom":
-					"calc( var(--leading-offset) + var(--font-offset-end,0) )",
+					"calc( var(--leading-offset,-.25em) + var(--font-offset-end,0em) )",
 			},
 			".trim-both": {
 				"margin-top":
-					"calc( var(--leading-offset) + var(--font-offset-start,0) )",
+					"calc( var(--leading-offset,-.25em) + var(--font-offset-start,0em) )",
 				"margin-bottom":
-					"calc( var(--leading-offset) + var(--font-offset-end,0) )",
+					"calc( var(--leading-offset,-.25em) + var(--font-offset-end,0em) )",
 			},
 		});
 
@@ -65,19 +99,44 @@ module.exports = plugin(
 
 		addUtilities(fontFamilyUtilities, variants("fontFamily"));
 
+		const fontSizeUtilities = fromPairs(
+			map(theme("fontSize"), (value, modifier) => {
+				const [fontSize, options] = Array.isArray(value) ? value : [value];
+				const { lineHeight, letterSpacing } = isPlainObject(options)
+					? options
+					: {
+							lineHeight: options,
+					  };
+
+				return [
+					nameClass("text", modifier),
+					{
+						"font-size": fontSize,
+						...(lineHeight === undefined
+							? {}
+							: {
+									"line-height": lineHeight,
+									"--leading-offset": offsetFromLineHeight(lineHeight),
+							  }),
+						...(letterSpacing === undefined
+							? {}
+							: {
+									"letter-spacing": letterSpacing,
+							  }),
+					},
+				];
+			})
+		);
+
+		addUtilities(fontSizeUtilities, variants("fontSize"));
+
 		const lineHeightUtilities = fromPairs(
 			map(theme("lineHeight"), (value, modifier) => {
-				const valueStripped = stripUnit(value);
-
-				const offset =
-					valueStripped === value
-						? (Number(value) - 1) / -2 + "em"
-						: `calc( (${value} - 1em) / -2)`;
 				return [
 					`.${e(`leading-${modifier}`)}`,
 					{
 						"line-height": value,
-						"--leading-offset": offset,
+						"--leading-offset": offsetFromLineHeight(value),
 					},
 				];
 			})
@@ -88,6 +147,7 @@ module.exports = plugin(
 	{
 		corePlugins: {
 			fontFamily: false,
+			fontSize: false,
 			lineHeight: false,
 		},
 	}

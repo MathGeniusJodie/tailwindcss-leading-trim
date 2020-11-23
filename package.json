@@ -12,8 +12,9 @@
 	],
 	"license": "WTFPL",
 	"devDependencies": {
-		"tailwindcss": "^1.7.6",
-		"tailwindcss-rtl": "^0.4.0"
+		"tailwindcss": "^2.0.1",
+		"tailwindcss-rtl": "^0.6.0",
+		"postcss": "^8.1.9"
 	},
 	"dependencies": {
 		"capsize": "^1.1.0",
