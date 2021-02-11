@@ -1,5 +1,392 @@
 [
   {
+    "familyName": "Spartan",
+    "subfamilyName": "Regular",
+    "capHeight": 1650,
+    "ascent": 1720,
+    "descent": -520,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Oxanium",
+    "subfamilyName": "Regular",
+    "capHeight": 690,
+    "ascent": 790,
+    "descent": -210,
+    "lineGap": 250,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Jost",
+    "subfamilyName": "Regular",
+    "capHeight": 700,
+    "ascent": 1070,
+    "descent": -375,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Caladea",
+    "subfamilyName": "Regular",
+    "capHeight": 667,
+    "ascent": 900,
+    "descent": -250,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Comic Neue",
+    "subfamilyName": "Regular",
+    "capHeight": 670,
+    "ascent": 900,
+    "descent": -250,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Balsamiq Sans",
+    "subfamilyName": "Regular",
+    "capHeight": 715,
+    "ascent": 900,
+    "descent": -300,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "DM Mono",
+    "subfamilyName": "Regular",
+    "capHeight": 700,
+    "ascent": 992,
+    "descent": -310,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "MuseoModerno",
+    "subfamilyName": "Regular",
+    "capHeight": 700,
+    "ascent": 1145,
+    "descent": -445,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Grenze Gotisch",
+    "subfamilyName": "Regular",
+    "capHeight": 603,
+    "ascent": 1100,
+    "descent": -380,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Sora",
+    "subfamilyName": "Regular",
+    "capHeight": 730,
+    "ascent": 970,
+    "descent": -290,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Varta",
+    "subfamilyName": "Regular",
+    "capHeight": 1346,
+    "ascent": 1902,
+    "descent": -1068,
+    "lineGap": 0,
+    "unitsPerEm": 2048
+  },
+  {
+    "familyName": "Epilogue",
+    "subfamilyName": "Regular",
+    "capHeight": 1475,
+    "ascent": 1580,
+    "descent": -470,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Red Rose",
+    "subfamilyName": "Regular",
+    "capHeight": 600,
+    "ascent": 937,
+    "descent": -312,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Harmattan",
+    "subfamilyName": "Regular",
+    "capHeight": 1111,
+    "ascent": 2166,
+    "descent": -1323,
+    "lineGap": 0,
+    "unitsPerEm": 2048
+  },
+  {
+    "familyName": "Petrona",
+    "subfamilyName": "Regular",
+    "capHeight": 641,
+    "ascent": 858,
+    "descent": -270,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Kufam",
+    "subfamilyName": "Regular",
+    "capHeight": 720,
+    "ascent": 900,
+    "descent": -400,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Commissioner",
+    "subfamilyName": "Regular",
+    "capHeight": 1426,
+    "ascent": 2034,
+    "descent": -412,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Goldman",
+    "subfamilyName": "Regular",
+    "capHeight": 588,
+    "ascent": 900,
+    "descent": -300,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Kumbh Sans",
+    "subfamilyName": "Regular",
+    "capHeight": 1500,
+    "ascent": 1540,
+    "descent": -520,
+    "lineGap": 0,
+    "unitsPerEm": 2048
+  },
+  {
+    "familyName": "Grandstander",
+    "subfamilyName": "Regular",
+    "capHeight": 1291,
+    "ascent": 1465,
+    "descent": -530,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Fraunces",
+    "subfamilyName": "Regular",
+    "capHeight": 1400,
+    "ascent": 1956,
+    "descent": -510,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Xanh Mono",
+    "subfamilyName": "Regular",
+    "capHeight": 740,
+    "ascent": 970,
+    "descent": -220,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Syne Tactile",
+    "subfamilyName": "Regular",
+    "capHeight": 650,
+    "ascent": 925,
+    "descent": -275,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Syne Mono",
+    "subfamilyName": "Regular",
+    "capHeight": 650,
+    "ascent": 925,
+    "descent": -275,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Syne",
+    "subfamilyName": "Regular",
+    "capHeight": 650,
+    "ascent": 925,
+    "descent": -275,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Piazzolla",
+    "subfamilyName": "Regular",
+    "capHeight": 644,
+    "ascent": 1110,
+    "descent": -310,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Sansita Swashed",
+    "subfamilyName": "Regular",
+    "capHeight": 660,
+    "ascent": 1020,
+    "descent": -180,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Trispace",
+    "subfamilyName": "Regular",
+    "capHeight": 1400,
+    "ascent": 1830,
+    "descent": -430,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Space Grotesk",
+    "subfamilyName": "Regular",
+    "capHeight": 700,
+    "ascent": 984,
+    "descent": -292,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Big Shoulders Stencil Text",
+    "subfamilyName": "Regular",
+    "capHeight": 1600,
+    "ascent": 1968,
+    "descent": -426,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Big Shoulders Stencil Display",
+    "subfamilyName": "Regular",
+    "capHeight": 1600,
+    "ascent": 1968,
+    "descent": -426,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Big Shoulders Inline Text",
+    "subfamilyName": "Regular",
+    "capHeight": 3200,
+    "ascent": 3936,
+    "descent": -852,
+    "lineGap": 0,
+    "unitsPerEm": 4000
+  },
+  {
+    "familyName": "Big Shoulders Inline Display",
+    "subfamilyName": "Regular",
+    "capHeight": 3200,
+    "ascent": 3936,
+    "descent": -852,
+    "lineGap": 0,
+    "unitsPerEm": 4000
+  },
+  {
+    "familyName": "Texturina",
+    "subfamilyName": "Regular",
+    "capHeight": 704,
+    "ascent": 1260,
+    "descent": -300,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Castoro",
+    "subfamilyName": "Regular",
+    "capHeight": 699,
+    "ascent": 755,
+    "descent": -245,
+    "lineGap": 250,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Nerko One",
+    "subfamilyName": "Regular",
+    "capHeight": 586,
+    "ascent": 894,
+    "descent": -317,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "JetBrains Mono",
+    "subfamilyName": "Regular",
+    "capHeight": 730,
+    "ascent": 1020,
+    "descent": -300,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Andika New Basic",
+    "subfamilyName": "Regular",
+    "capHeight": 1485,
+    "ascent": 2500,
+    "descent": -800,
+    "lineGap": 0,
+    "unitsPerEm": 2048
+  },
+  {
+    "familyName": "Bodoni Moda",
+    "subfamilyName": "Regular",
+    "capHeight": 1500,
+    "ascent": 2250,
+    "descent": -800,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Imbue",
+    "subfamilyName": "Regular",
+    "capHeight": 1400,
+    "ascent": 1900,
+    "descent": -500,
+    "lineGap": 0,
+    "unitsPerEm": 2000
+  },
+  {
+    "familyName": "Yusei Magic",
+    "subfamilyName": "Regular",
+    "capHeight": 760,
+    "ascent": 1160,
+    "descent": -288,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Potta One",
+    "subfamilyName": "Regular",
+    "capHeight": 780,
+    "ascent": 1160,
+    "descent": -288,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
+    "familyName": "Hachi Maru Pop",
+    "subfamilyName": "Regular",
+    "capHeight": 700,
+    "ascent": 1160,
+    "descent": -288,
+    "lineGap": 0,
+    "unitsPerEm": 1000
+  },
+  {
     "familyName": "Antic Slab",
     "subfamilyName": "Regular",
     "capHeight": 700,

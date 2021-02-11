@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-leading-trim",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "leading trim utility classes and polyfill for tailwindcss",
 	"repository": "https://github.com/MathGeniusJodie/tailwindcss-leading-trim",
 	"main": "index.js",
@@ -10,11 +10,11 @@
 	"contributors": [
 		"Jodie <https://github.com/MathGeniusJodie>"
 	],
-	"license": "WTFPL",
+	"license": "BSD0",
 	"devDependencies": {
-		"tailwindcss": "^2.0.1",
-		"tailwindcss-rtl": "^0.6.0",
-		"postcss": "^8.1.9"
+		"postcss": "^8.2.6",
+		"tailwindcss": "^2.0.3",
+		"tailwindcss-rtl": "^0.7.3"
 	},
 	"dependencies": {
 		"capsize": "^1.1.0",
