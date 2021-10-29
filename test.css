@@ -14,7 +14,148 @@
 .font-source-sans {
   font-family: Source Sans Pro;
   --font-offset-start: -0.1955em;
-  --font-offset-end: -0.1445em
+  --font-offset-end: -0.1445em;
+  --font-adjust: 1.5151515151515151
+}
+
+.text-0 {
+  font-size: calc(0px * var(--font-adjust,1))
+}
+
+.text-1 {
+  font-size: calc(0.25rem * var(--font-adjust,1))
+}
+
+.text-2 {
+  font-size: calc(0.5rem * var(--font-adjust,1))
+}
+
+.text-3 {
+  font-size: calc(0.75rem * var(--font-adjust,1))
+}
+
+.text-4 {
+  font-size: calc(1rem * var(--font-adjust,1))
+}
+
+.text-5 {
+  font-size: calc(1.25rem * var(--font-adjust,1))
+}
+
+.text-6 {
+  font-size: calc(1.5rem * var(--font-adjust,1))
+}
+
+.text-7 {
+  font-size: calc(1.75rem * var(--font-adjust,1))
+}
+
+.text-8 {
+  font-size: calc(2rem * var(--font-adjust,1))
+}
+
+.text-9 {
+  font-size: calc(2.25rem * var(--font-adjust,1))
+}
+
+.text-10 {
+  font-size: calc(2.5rem * var(--font-adjust,1))
+}
+
+.text-11 {
+  font-size: calc(2.75rem * var(--font-adjust,1))
+}
+
+.text-12 {
+  font-size: calc(3rem * var(--font-adjust,1))
+}
+
+.text-14 {
+  font-size: calc(3.5rem * var(--font-adjust,1))
+}
+
+.text-16 {
+  font-size: calc(4rem * var(--font-adjust,1))
+}
+
+.text-20 {
+  font-size: calc(5rem * var(--font-adjust,1))
+}
+
+.text-24 {
+  font-size: calc(6rem * var(--font-adjust,1))
+}
+
+.text-28 {
+  font-size: calc(7rem * var(--font-adjust,1))
+}
+
+.text-32 {
+  font-size: calc(8rem * var(--font-adjust,1))
+}
+
+.text-36 {
+  font-size: calc(9rem * var(--font-adjust,1))
+}
+
+.text-40 {
+  font-size: calc(10rem * var(--font-adjust,1))
+}
+
+.text-44 {
+  font-size: calc(11rem * var(--font-adjust,1))
+}
+
+.text-48 {
+  font-size: calc(12rem * var(--font-adjust,1))
+}
+
+.text-52 {
+  font-size: calc(13rem * var(--font-adjust,1))
+}
+
+.text-56 {
+  font-size: calc(14rem * var(--font-adjust,1))
+}
+
+.text-60 {
+  font-size: calc(15rem * var(--font-adjust,1))
+}
+
+.text-64 {
+  font-size: calc(16rem * var(--font-adjust,1))
+}
+
+.text-72 {
+  font-size: calc(18rem * var(--font-adjust,1))
+}
+
+.text-80 {
+  font-size: calc(20rem * var(--font-adjust,1))
+}
+
+.text-96 {
+  font-size: calc(24rem * var(--font-adjust,1))
+}
+
+.text-px {
+  font-size: calc(1px * var(--font-adjust,1))
+}
+
+.text-0\.5 {
+  font-size: calc(0.125rem * var(--font-adjust,1))
+}
+
+.text-1\.5 {
+  font-size: calc(0.375rem * var(--font-adjust,1))
+}
+
+.text-2\.5 {
+  font-size: calc(0.625rem * var(--font-adjust,1))
+}
+
+.text-3\.5 {
+  font-size: calc(0.875rem * var(--font-adjust,1))
 }
 
 .text-xs {
@@ -169,7 +310,148 @@
   .sm\:font-source-sans {
     font-family: Source Sans Pro;
     --font-offset-start: -0.1955em;
-    --font-offset-end: -0.1445em
+    --font-offset-end: -0.1445em;
+    --font-adjust: 1.5151515151515151
+  }
+
+  .sm\:text-0 {
+    font-size: calc(0px * var(--font-adjust,1))
+  }
+
+  .sm\:text-1 {
+    font-size: calc(0.25rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-2 {
+    font-size: calc(0.5rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-3 {
+    font-size: calc(0.75rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-4 {
+    font-size: calc(1rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-5 {
+    font-size: calc(1.25rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-6 {
+    font-size: calc(1.5rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-7 {
+    font-size: calc(1.75rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-8 {
+    font-size: calc(2rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-9 {
+    font-size: calc(2.25rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-10 {
+    font-size: calc(2.5rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-11 {
+    font-size: calc(2.75rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-12 {
+    font-size: calc(3rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-14 {
+    font-size: calc(3.5rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-16 {
+    font-size: calc(4rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-20 {
+    font-size: calc(5rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-24 {
+    font-size: calc(6rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-28 {
+    font-size: calc(7rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-32 {
+    font-size: calc(8rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-36 {
+    font-size: calc(9rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-40 {
+    font-size: calc(10rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-44 {
+    font-size: calc(11rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-48 {
+    font-size: calc(12rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-52 {
+    font-size: calc(13rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-56 {
+    font-size: calc(14rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-60 {
+    font-size: calc(15rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-64 {
+    font-size: calc(16rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-72 {
+    font-size: calc(18rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-80 {
+    font-size: calc(20rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-96 {
+    font-size: calc(24rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-px {
+    font-size: calc(1px * var(--font-adjust,1))
+  }
+
+  .sm\:text-0\.5 {
+    font-size: calc(0.125rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-1\.5 {
+    font-size: calc(0.375rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-2\.5 {
+    font-size: calc(0.625rem * var(--font-adjust,1))
+  }
+
+  .sm\:text-3\.5 {
+    font-size: calc(0.875rem * var(--font-adjust,1))
   }
 
   .sm\:text-xs {
@@ -325,7 +607,148 @@
   .md\:font-source-sans {
     font-family: Source Sans Pro;
     --font-offset-start: -0.1955em;
-    --font-offset-end: -0.1445em
+    --font-offset-end: -0.1445em;
+    --font-adjust: 1.5151515151515151
+  }
+
+  .md\:text-0 {
+    font-size: calc(0px * var(--font-adjust,1))
+  }
+
+  .md\:text-1 {
+    font-size: calc(0.25rem * var(--font-adjust,1))
+  }
+
+  .md\:text-2 {
+    font-size: calc(0.5rem * var(--font-adjust,1))
+  }
+
+  .md\:text-3 {
+    font-size: calc(0.75rem * var(--font-adjust,1))
+  }
+
+  .md\:text-4 {
+    font-size: calc(1rem * var(--font-adjust,1))
+  }
+
+  .md\:text-5 {
+    font-size: calc(1.25rem * var(--font-adjust,1))
+  }
+
+  .md\:text-6 {
+    font-size: calc(1.5rem * var(--font-adjust,1))
+  }
+
+  .md\:text-7 {
+    font-size: calc(1.75rem * var(--font-adjust,1))
+  }
+
+  .md\:text-8 {
+    font-size: calc(2rem * var(--font-adjust,1))
+  }
+
+  .md\:text-9 {
+    font-size: calc(2.25rem * var(--font-adjust,1))
+  }
+
+  .md\:text-10 {
+    font-size: calc(2.5rem * var(--font-adjust,1))
+  }
+
+  .md\:text-11 {
+    font-size: calc(2.75rem * var(--font-adjust,1))
+  }
+
+  .md\:text-12 {
+    font-size: calc(3rem * var(--font-adjust,1))
+  }
+
+  .md\:text-14 {
+    font-size: calc(3.5rem * var(--font-adjust,1))
+  }
+
+  .md\:text-16 {
+    font-size: calc(4rem * var(--font-adjust,1))
+  }
+
+  .md\:text-20 {
+    font-size: calc(5rem * var(--font-adjust,1))
+  }
+
+  .md\:text-24 {
+    font-size: calc(6rem * var(--font-adjust,1))
+  }
+
+  .md\:text-28 {
+    font-size: calc(7rem * var(--font-adjust,1))
+  }
+
+  .md\:text-32 {
+    font-size: calc(8rem * var(--font-adjust,1))
+  }
+
+  .md\:text-36 {
+    font-size: calc(9rem * var(--font-adjust,1))
+  }
+
+  .md\:text-40 {
+    font-size: calc(10rem * var(--font-adjust,1))
+  }
+
+  .md\:text-44 {
+    font-size: calc(11rem * var(--font-adjust,1))
+  }
+
+  .md\:text-48 {
+    font-size: calc(12rem * var(--font-adjust,1))
+  }
+
+  .md\:text-52 {
+    font-size: calc(13rem * var(--font-adjust,1))
+  }
+
+  .md\:text-56 {
+    font-size: calc(14rem * var(--font-adjust,1))
+  }
+
+  .md\:text-60 {
+    font-size: calc(15rem * var(--font-adjust,1))
+  }
+
+  .md\:text-64 {
+    font-size: calc(16rem * var(--font-adjust,1))
+  }
+
+  .md\:text-72 {
+    font-size: calc(18rem * var(--font-adjust,1))
+  }
+
+  .md\:text-80 {
+    font-size: calc(20rem * var(--font-adjust,1))
+  }
+
+  .md\:text-96 {
+    font-size: calc(24rem * var(--font-adjust,1))
+  }
+
+  .md\:text-px {
+    font-size: calc(1px * var(--font-adjust,1))
+  }
+
+  .md\:text-0\.5 {
+    font-size: calc(0.125rem * var(--font-adjust,1))
+  }
+
+  .md\:text-1\.5 {
+    font-size: calc(0.375rem * var(--font-adjust,1))
+  }
+
+  .md\:text-2\.5 {
+    font-size: calc(0.625rem * var(--font-adjust,1))
+  }
+
+  .md\:text-3\.5 {
+    font-size: calc(0.875rem * var(--font-adjust,1))
   }
 
   .md\:text-xs {
@@ -481,7 +904,148 @@
   .lg\:font-source-sans {
     font-family: Source Sans Pro;
     --font-offset-start: -0.1955em;
-    --font-offset-end: -0.1445em
+    --font-offset-end: -0.1445em;
+    --font-adjust: 1.5151515151515151
+  }
+
+  .lg\:text-0 {
+    font-size: calc(0px * var(--font-adjust,1))
+  }
+
+  .lg\:text-1 {
+    font-size: calc(0.25rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-2 {
+    font-size: calc(0.5rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-3 {
+    font-size: calc(0.75rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-4 {
+    font-size: calc(1rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-5 {
+    font-size: calc(1.25rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-6 {
+    font-size: calc(1.5rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-7 {
+    font-size: calc(1.75rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-8 {
+    font-size: calc(2rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-9 {
+    font-size: calc(2.25rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-10 {
+    font-size: calc(2.5rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-11 {
+    font-size: calc(2.75rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-12 {
+    font-size: calc(3rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-14 {
+    font-size: calc(3.5rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-16 {
+    font-size: calc(4rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-20 {
+    font-size: calc(5rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-24 {
+    font-size: calc(6rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-28 {
+    font-size: calc(7rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-32 {
+    font-size: calc(8rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-36 {
+    font-size: calc(9rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-40 {
+    font-size: calc(10rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-44 {
+    font-size: calc(11rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-48 {
+    font-size: calc(12rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-52 {
+    font-size: calc(13rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-56 {
+    font-size: calc(14rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-60 {
+    font-size: calc(15rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-64 {
+    font-size: calc(16rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-72 {
+    font-size: calc(18rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-80 {
+    font-size: calc(20rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-96 {
+    font-size: calc(24rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-px {
+    font-size: calc(1px * var(--font-adjust,1))
+  }
+
+  .lg\:text-0\.5 {
+    font-size: calc(0.125rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-1\.5 {
+    font-size: calc(0.375rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-2\.5 {
+    font-size: calc(0.625rem * var(--font-adjust,1))
+  }
+
+  .lg\:text-3\.5 {
+    font-size: calc(0.875rem * var(--font-adjust,1))
   }
 
   .lg\:text-xs {
@@ -637,7 +1201,148 @@
   .xl\:font-source-sans {
     font-family: Source Sans Pro;
     --font-offset-start: -0.1955em;
-    --font-offset-end: -0.1445em
+    --font-offset-end: -0.1445em;
+    --font-adjust: 1.5151515151515151
+  }
+
+  .xl\:text-0 {
+    font-size: calc(0px * var(--font-adjust,1))
+  }
+
+  .xl\:text-1 {
+    font-size: calc(0.25rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-2 {
+    font-size: calc(0.5rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-3 {
+    font-size: calc(0.75rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-4 {
+    font-size: calc(1rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-5 {
+    font-size: calc(1.25rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-6 {
+    font-size: calc(1.5rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-7 {
+    font-size: calc(1.75rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-8 {
+    font-size: calc(2rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-9 {
+    font-size: calc(2.25rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-10 {
+    font-size: calc(2.5rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-11 {
+    font-size: calc(2.75rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-12 {
+    font-size: calc(3rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-14 {
+    font-size: calc(3.5rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-16 {
+    font-size: calc(4rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-20 {
+    font-size: calc(5rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-24 {
+    font-size: calc(6rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-28 {
+    font-size: calc(7rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-32 {
+    font-size: calc(8rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-36 {
+    font-size: calc(9rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-40 {
+    font-size: calc(10rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-44 {
+    font-size: calc(11rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-48 {
+    font-size: calc(12rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-52 {
+    font-size: calc(13rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-56 {
+    font-size: calc(14rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-60 {
+    font-size: calc(15rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-64 {
+    font-size: calc(16rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-72 {
+    font-size: calc(18rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-80 {
+    font-size: calc(20rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-96 {
+    font-size: calc(24rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-px {
+    font-size: calc(1px * var(--font-adjust,1))
+  }
+
+  .xl\:text-0\.5 {
+    font-size: calc(0.125rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-1\.5 {
+    font-size: calc(0.375rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-2\.5 {
+    font-size: calc(0.625rem * var(--font-adjust,1))
+  }
+
+  .xl\:text-3\.5 {
+    font-size: calc(0.875rem * var(--font-adjust,1))
   }
 
   .xl\:text-xs {
@@ -793,7 +1498,148 @@
   .\32xl\:font-source-sans {
     font-family: Source Sans Pro;
     --font-offset-start: -0.1955em;
-    --font-offset-end: -0.1445em
+    --font-offset-end: -0.1445em;
+    --font-adjust: 1.5151515151515151
+  }
+
+  .\32xl\:text-0 {
+    font-size: calc(0px * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-1 {
+    font-size: calc(0.25rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-2 {
+    font-size: calc(0.5rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-3 {
+    font-size: calc(0.75rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-4 {
+    font-size: calc(1rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-5 {
+    font-size: calc(1.25rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-6 {
+    font-size: calc(1.5rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-7 {
+    font-size: calc(1.75rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-8 {
+    font-size: calc(2rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-9 {
+    font-size: calc(2.25rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-10 {
+    font-size: calc(2.5rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-11 {
+    font-size: calc(2.75rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-12 {
+    font-size: calc(3rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-14 {
+    font-size: calc(3.5rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-16 {
+    font-size: calc(4rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-20 {
+    font-size: calc(5rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-24 {
+    font-size: calc(6rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-28 {
+    font-size: calc(7rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-32 {
+    font-size: calc(8rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-36 {
+    font-size: calc(9rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-40 {
+    font-size: calc(10rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-44 {
+    font-size: calc(11rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-48 {
+    font-size: calc(12rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-52 {
+    font-size: calc(13rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-56 {
+    font-size: calc(14rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-60 {
+    font-size: calc(15rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-64 {
+    font-size: calc(16rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-72 {
+    font-size: calc(18rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-80 {
+    font-size: calc(20rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-96 {
+    font-size: calc(24rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-px {
+    font-size: calc(1px * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-0\.5 {
+    font-size: calc(0.125rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-1\.5 {
+    font-size: calc(0.375rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-2\.5 {
+    font-size: calc(0.625rem * var(--font-adjust,1))
+  }
+
+  .\32xl\:text-3\.5 {
+    font-size: calc(0.875rem * var(--font-adjust,1))
   }
 
   .\32xl\:text-xs {

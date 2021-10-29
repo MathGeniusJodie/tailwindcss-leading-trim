@@ -86,18 +86,34 @@ module.exports = plugin(
 				const offsetStart = (ascent - capHeight - foo) / -unitsPerEm + "em";
 				const offsetEnd = (foo + descent) / unitsPerEm + "em";
 
+				const ajust = unitsPerEm / capHeight + "";
+
 				return [
 					`.${e(`font-${modifier}`)}`,
 					{
 						"font-family": fontFamily,
 						"--font-offset-start": offsetStart,
 						"--font-offset-end": offsetEnd,
+						"--font-adjust": ajust,
 					},
 				];
 			})
 		);
 
 		addUtilities(fontFamilyUtilities, variants("fontFamily"));
+
+		const numericFontSizeUtilities = fromPairs(
+			map(theme("spacing"), (value, modifier) => {
+				return [
+					nameClass("text", modifier),
+					{
+						"font-size": `calc(${value} * var(--font-adjust,1))`,
+					},
+				];
+			})
+		);
+
+		addUtilities(numericFontSizeUtilities, variants("fontSize"));
 
 		const fontSizeUtilities = fromPairs(
 			map(theme("fontSize"), (value, modifier) => {
